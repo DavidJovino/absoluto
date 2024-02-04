@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Sobrenos = () => {
   return (
-    <section className="flex container justify-center max-w-screen-2xl h-dvh items-center bg-blue-sobrenos footer-bg mx-auto">
+    <section className="flex container justify-center max-w-screen-2xl h-dvh items-center bg-blue-sobrenos footer-bg mx-auto" id="sobrenos">
       <div className="grid grid-cols-6 items-center flex-wrap justify-center gap-14">
           <div className="col-start-2 col-span-2 items-center w-full h-auto mx-auto">
             <Image

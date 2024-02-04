@@ -25,6 +25,19 @@ const navLinks = [
   },
 ];
 
+const scrollToSection = (sectionId) => {
+  // Previne o comportamento padrão se necessário
+  // event.preventDefault();
+
+  // Seleciona a seção baseada no ID
+  const section = document.querySelector(sectionId);
+
+  // Se a seção existe, rola até ela suavemente
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -62,7 +75,7 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} />
+                <NavLink href={link.path} title={link.title} onClick={() => scrollToSection(link.path)} />
               </li>
             ))}
             <Link

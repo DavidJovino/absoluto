@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <section className="flex justify-center max-w-screen-2xl max-w-[1920px] max-h-[1080px] h-dvh">
+    <section className="flex justify-center max-w-screen-2xl max-w-[1920px] max-h-[1080px] h-dvh" id="home" >
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-2 items-center flex-wrap justify-center">
           <div className="aspect-w-3 aspect-h-2 w-full h-auto">
             <h1 className=" text-6xl h-auto font-bold mb-4 font-sans">
