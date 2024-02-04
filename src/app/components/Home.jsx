@@ -12,7 +12,7 @@ const Home = () => {
             <p className="text-justify aspect-w-3 aspect-h-2  w-full h-auto  mb-4">
               Soluções de Redes Empresariais Inovadoras para o Sucesso Sustentável
             </p>
-            <button class="bg-blue-ti text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-150 ease-in-out hover:scale-110">
+            <button className="bg-blue-ti text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 transition-colors duration-150 ease-in-out hover:scale-110">
               Contato
             </button>
 

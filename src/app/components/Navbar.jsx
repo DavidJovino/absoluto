@@ -83,7 +83,8 @@ const Navbar = () => {
             >
             <Image className='pl-2'
                         src="/images/whatsapp.svg"
-                        alt="Absoluto"
+                        alt="whatsapp"
+                        className="hover:scale-110"
                         width={40}
                         height={40}
                         />
