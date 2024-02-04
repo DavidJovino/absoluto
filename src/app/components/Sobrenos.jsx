@@ -14,16 +14,17 @@ const Sobrenos = () => {
             />
           </div> 
           <div className="col-span-2 aspect-w-3 aspect-h-2 w-full h-auto items-center">
-            <h1 className=" text-4xl h-auto font-bold mb-4 font-sans">
-                Conectando Seu Caminho Para O Futuro
+            <h1 className="h-auto mb-10 flex justify-center mx-auto text-blue-ti text-6xl font-extrabold">
+                Sobre Nós
             </h1>
-            <p className="">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            <p className="text-xl mt-4">
+              Bem-vindo à <b>Absoluto</b>, sua parceira de confiança no universo da Tecnologia da Informação, especializada em soluções de Redes, Routing e Firewall. Fundada em 2023, nossa empresa se destina a prover soluções inovadoras e seguras para otimizar e proteger a infraestrutura de TI de nossos clientes. </p>
+            <p className="text-xl mt-2">
+              <b>Missão:</b> Nossa missão é oferecer soluções de TI personalizadas que garantam a segurança, a eficiência e a escalabilidade dos sistemas de nossos clientes. Entendemos os desafios únicos enfrentados pelas empresas na era digital e estamos dedicados a superá-los, garantindo que suas operações de rede sejam robustas e resilientes. </p>
+            <p className="text-xl mt-2">
+              <b>Visão:</b> Aspiramos ser reconhecidos como líderes no fornecimento de soluções de redes, routing e firewall, estabelecendo padrões de excelência no atendimento ao cliente, inovação e segurança. Estamos empenhados em manter-nos na vanguarda da tecnologia, antecipando as necessidades futuras de nossos clientes e do mercado.
             </p>
-            <button class="">
-              Contato
-            </button> 
-            </div>  
+          </div>  
       </div>
     </section>
   );

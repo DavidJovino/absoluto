@@ -15,17 +15,53 @@ const Servicos = () => {
             <p className=" text-2xl ">Conecte dispositivos de forma eficiente, assegurando comunicação instantânea e compartilhamento ágil de recursos em redes, garantindo desempenho, segurança e adaptabilidade.</p>
         </div>
         <div className="row-start-4 col-start-2 col-span-4 row-span-2 grid grid-cols-4 gap-x-12 mb-10">
-            <div className="bg-blue-ti text-white font-semibold rounded py-[8rem] px-5">
-              <h1 className="text-center">Contato</h1>
+            <div className="bg-blue-ti text-white font-semibold rounded-lg py-[6rem] px-5">
+              <div className=" text-white font-semibold grid grid-rows-2">
+                <Image 
+                src="/images/wifi.png"
+                alt="frame"
+                className="object-contain h-full mx-auto"
+                width={80}
+                height={80}
+                />
+                <h1 className="text-center text-2xl mt-10">Mikrotik Routing & Switching</h1>
+              </div>
             </div>
-            <div className="bg-blue-ti text-white font-semibold rounded py-[8rem] px-5">
-              <h1 className="text-center">Contato</h1>
+            <div className="bg-blue-ti text-white font-semibold rounded-lg py-[6rem] px-5">
+              <div className=" text-white font-semibold grid grid-rows-2">
+                <Image 
+                src="/images/wifi.png"
+                alt="frame"
+                className="object-contain h-full mx-auto"
+                width={80}
+                height={80}
+                />
+                <h1 className="text-center text-2xl mt-10">CISCO Routing & Switching</h1>
+              </div>
             </div>
-            <div className="bg-blue-ti text-white font-semibold rounded py-[8rem] px-5">
-              <h1 className="text-center">Contato</h1>
+            <div className="bg-blue-ti text-white font-semibold rounded-lg py-[6rem] px-5">
+              <div className=" text-white font-semibold grid grid-rows-2">
+                <Image 
+                src="/images/wifi.png"
+                alt="frame"
+                className="object-contain h-full mx-auto"
+                width={80}
+                height={80}
+                />
+                <h1 className="text-center text-2xl mt-10">HPE Routing & Switching</h1>
+              </div>
             </div>
-            <div className="bg-blue-ti text-white font-semibold rounded py-[8rem] px-5">
-              <h1 className="text-center">Contato</h1>
+            <div className="bg-blue-ti text-white font-semibold rounded-lg py-[6rem] px-5">
+              <div className=" text-white font-semibold grid grid-rows-2">
+                <Image 
+                src="/images/wifi.png"
+                alt="frame"
+                className="object-contain h-full mx-auto"
+                width={80}
+                height={80}
+                />
+                <h1 className="text-center text-2xl mt-10">Aruba Routing & Switching</h1>
+              </div>
             </div>
         </div>
         <div className="row-start-6 col-start-2 col-span-4 flex mb-2">
