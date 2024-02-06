@@ -3,16 +3,16 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Sobrenos from "./components/Sobrenos";
 import Servicos from "./components/Servicos";
+import Clientes from "./components/Clientes";
 
 export default function Web() {
   return (
     <main className="flex min-h-screen flex-col">
       <Navbar />
-      <div className="container mt-14 mx-auto px-12 py-4">
-        <Home />
-      </div>
+      <Home />
       <Sobrenos />
       <Servicos />
+      <Clientes />
       <Footer />
     </main>
   );
