@@ -14,9 +14,11 @@ const Home = () => {
           <p className="text-justify mb-4">
             Soluções de Redes Empresariais Inovadoras para o Sucesso Sustentável
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition-colors duration-150 ease-in-out">
-            Contato
-          </button>
+          <a href="https://wa.me/5511932158284" target="_blank" rel="noopener noreferrer" className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition-colors duration-150 ease-in-out">
+            <button type="button">
+              Contato
+            </button>
+          </a>
         </div>
       </div>
       <div className="flex-1 flex justify-center md:max-w-md">

@@ -7,7 +7,7 @@ const Servicos = () => {
       <h1 className="text-blue-ti text-4xl md:text-6xl font-extrabold mb-10">Serviços</h1>
       
       {/* Seção de Redes */}
-      <h2 className="text-blue-ti text-2xl font-bold mb-4">Redes</h2>
+      <h2 className="text-blue-ti text-2xl font-bold mb-4">Conectividade</h2>
       <p className="text-xl text-center mb-8">
         Conecte dispositivos de forma eficiente, assegurando comunicação instantânea e compartilhamento ágil de recursos em redes, garantindo desempenho, segurança e adaptabilidade.
       </p>
@@ -27,7 +27,7 @@ const Servicos = () => {
       </div>
       
       {/* Seção de Segurança e Firewall */}
-      <h2 className="text-blue-ti text-2xl font-bold mb-4">Segurança e Firewall:</h2>
+      <h2 className="text-blue-ti text-2xl font-bold mb-4">Cybersegurança:</h2>
       <p className="text-xl text-center mb-8">
         Fortaleça a proteção da sua rede com soluções de segurança e firewall, assegurando a defesa contra ameaças, controle de tráfego e garantindo ambientes online seguros e resilientes.
       </p>

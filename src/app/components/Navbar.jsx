@@ -25,14 +25,11 @@ const navLinks = [
   },
 ];
 
-const scrollToSection = (sectionId) => {
-  // Previne o comportamento padrão se necessário
-  // event.preventDefault();
+const scrollToSection = (e, sectionId) => {
+  e.preventDefault(); // Isso irá prevenir o comportamento padrão de navegação direta.
 
-  // Seleciona a seção baseada no ID
   const section = document.querySelector(sectionId);
 
-  // Se a seção existe, rola até ela suavemente
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
@@ -75,20 +72,20 @@ const Navbar = () => {
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <NavLink href={link.path} title={link.title} onClick={() => scrollToSection(link.path)} />
+                <NavLink href={link.path} title={link.title} onClick={() => scrollToSection(e, link.path)} />
               </li>
             ))}
-            <Link
-            href={"/"}
-            >
-            <Image className='pl-2'
-                        src="/images/whatsapp.svg"
-                        alt="whatsapp"
-                        className="hover:scale-110"
-                        width={40}
-                        height={40}
-                        />
-            </Link>
+            <li>
+              <a href="https://wa.me/5511932158284" target="_blank" rel="noopener noreferrer" >
+                <Image
+                  src="/images/whatsapp.svg"
+                  alt="WhatsApp"
+                  width={40}
+                  height={40}
+                  className="hover:scale-110"
+                />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

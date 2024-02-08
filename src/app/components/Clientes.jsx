@@ -4,9 +4,9 @@ import Image from "next/image";
 const Clientes = () => {
   return (
     // Div externa para o background
-    <div className="min-h-screen bg-blue-sobrenos footer-bg flex justify-center items-center">
+    <div className="min-h-screen bg-blue-sobrenos footer-bg flex justify-center items-center w-full mx-auto">
      {/* Envoltório adicional para garantir centralização em telas amplas */}
-      <div className="flex justify-center w-full">
+      <div className="flex justify-center">
         <section className="max-w-6xl w-full px-4 py-10">
           <h1 className="text-blue-ti text-4xl md:text-6xl font-extrabold mb-10 text-center">
             Clientes
