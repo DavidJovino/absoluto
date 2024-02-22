@@ -18,8 +18,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      #- name: Export (se necessário)
-      #  run: npm run export
+      - name: Export
+        run: npm run export
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
