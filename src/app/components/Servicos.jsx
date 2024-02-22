@@ -13,7 +13,7 @@ const Servicos = () => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
         {["Mikrotik", "CISCO", "HPE", "Aruba"].map(service => (
-          <div className="bg-blue-ti text-white font-semibold rounded-lg py-12 px-4 flex flex-col items-center justify-center">
+          <div key={service} className="bg-blue-ti text-white font-semibold rounded-lg py-12 px-4 flex flex-col items-center justify-center">
             <Image 
               src="/images/wifi.png"
               alt={`${service} Routing & Switching`}
@@ -33,7 +33,7 @@ const Servicos = () => {
       </p>
       <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mb-10">
         {["CISCO Asa", "PFsense", "Mikrotik", "Checkpoint", "Sonicwall", "Fortigate"].map(firewall => (
-          <div className="bg-blue-300 text-white font-semibold rounded py-8 px-4 flex items-center justify-center">
+          <div key={firewall} className="bg-blue-300 text-white font-semibold rounded py-8 px-4 flex items-center justify-center">
             <Image 
               src="/images/Frame.png"
               alt={firewall}
