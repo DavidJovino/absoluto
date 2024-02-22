@@ -1,4 +1,4 @@
-name: DavidJovino CI
+name: DavidJovino DEV CI
 
 on:
   push:
