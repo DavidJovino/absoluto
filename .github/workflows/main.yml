@@ -6,27 +6,28 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18.x' # Atualizado para usar Node.js versão 18
+          node-version: '18.x'
       - name: Install npm dependencies
         run: npm install
-      - name: Run build task
-        run: npm run build --if-present
-      - name: List output directory
-        run: ls -lah out/
+      - name: Build
+        run: npm run build
+      #- name: Export (se necessário)
+      #  run: npm run export
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
-        with:
+        env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
-          ARGS: "-rlgoDzvc -i --delete"
           SOURCE: "out/"
+          TARGET: ${{ secrets.REMOTE_TARGET_MAIN }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          TARGET: ${{ secrets.REMOTE_TARGET_MAIN }}
+          ARGS: "-avzr --delete"
+
