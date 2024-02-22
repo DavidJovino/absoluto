@@ -3,7 +3,7 @@ name: DavidJovino Dev CI
 on:
   push:
     branches:
-      -dev
+      - dev
 
 jobs:
   build:
